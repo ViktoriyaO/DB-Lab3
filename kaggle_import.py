@@ -54,10 +54,9 @@ except:
     print(f'Error of the row {row_num}')
     raise
 
-finally:
-    csvfile.close()
-    connection.commit()
-    cursor.close()
-    connection.close()
+csvfile.close()
+connection.commit()
+cursor.close()
+connection.close()
 
 
